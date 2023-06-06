@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Household Budget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Household Budget</h1>
+    </header>
+    <main>
+      <section class="income">
+        <input id="income-input" type="text" placeholder="Add income..." />
+        <button id="income-btn">Add</button>
+      </section>
+      <section class="expenses">
+        <h2>Expenses</h2>
+        <form action="">
+          <div class="category-date">
+            <div class="expense-place">
+              <label for="expenses" name="expenses">Category</label> <br />
+              <input
+                class="category-amount"
+                type="text"
+                name="expenses"
+                placeholder="Clothing, Bill, Grocerie..."
+              />
+            </div>
+            <div class="expense-date">
+              <label for="date" name="date">Date</label> <br />
+              <input id="date" type="date" name="date" />
+            </div>
+          </div>
+          <div class="expence-amount">
+            <label for="amount" name="amount">Amount</label> <br />
+            <input
+              class="category-amount"
+              type="text"
+              name="amaount"
+              placeholder="100$"
+            />
+          </div>
+          <div class="submit">
+            <button id="save-btn">Save</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <section class="list">
+      <div class="expense-table">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="total-table">
+        <table>
+          <tr>
+            <th>Incomes</th>
+            <td>:200</td>
+          </tr>
+          <tr>
+            <th>Expences</th>
+            <td>:300</td>
+          </tr>
+          <tr>
+            <th>Rest</th>
+            <td>:200-300</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="reset-input">
+        <button id="clear">Clear All</button>
+      </div>
+    </section>
+  </body>
+</html>
