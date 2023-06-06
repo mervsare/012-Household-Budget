@@ -29,6 +29,7 @@
             <div class="expense-place">
               <label for="expenses" name="expenses">Category</label> <br />
               <input
+                id="expenses"
                 class="category-amount"
                 type="text"
                 name="expenses"
@@ -43,6 +44,7 @@
           <div class="expence-amount">
             <label for="amount" name="amount">Amount</label> <br />
             <input
+              id="amount"
               class="category-amount"
               type="text"
               name="amaount"
@@ -71,7 +73,7 @@
         <table>
           <tr>
             <th>Incomes</th>
-            <td>:200</td>
+            <td>: <span id="incomes">0</span></td>
           </tr>
           <tr>
             <th>Expences</th>
@@ -88,5 +90,6 @@
         <button id="clear">Clear All</button>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
