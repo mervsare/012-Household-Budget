@@ -18,10 +18,15 @@
       <h1>Household Budget</h1>
     </header>
     <main>
-      <section class="income">
-        <input id="income-input" type="text" placeholder="Add income..." />
-        <button id="income-btn">Add</button>
-      </section>
+      <form class="income">
+        <input
+          id="income-input"
+          type="number"
+          autofocus
+          placeholder="Add income..."
+        />
+        <button id="income-btn" type="button">Add</button>
+      </form>
       <section class="expenses">
         <h2>Expenses</h2>
         <form action="">
@@ -52,30 +57,32 @@
             />
           </div>
           <div class="submit">
-            <button id="save-btn">Save</button>
+            <button id="save-btn" type="button">Save</button>
           </div>
         </form>
       </section>
     </main>
     <section class="list">
-      <div class="expense-table">
+      <form class="expense-table">
         <table>
-          <tr>
-            <th>Date</th>
-            <th>Category</th>
-            <th>Amount</th>
-            <th></th>
-          </tr>
-          <tr id="expense-list"></tr>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Category</th>
+              <th>Amount</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
         </table>
-      </div>
-
-      <div class="total-table">
-        <table>
+      </form>
+      <table class="total-table">
+        <tbody>
           <tr>
             <th>Incomes</th>
-            <td>: <span id="incomes">0</span></td>
+            <td>:<span id="incomes">0</span></td>
           </tr>
+
           <tr>
             <th>Expences</th>
             <td>:300</td>
@@ -84,8 +91,8 @@
             <th>Rest</th>
             <td>:200-300</td>
           </tr>
-        </table>
-      </div>
+        </tbody>
+      </table>
 
       <div class="reset-input">
         <button id="clear">Clear All</button>
