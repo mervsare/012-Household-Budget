@@ -32,14 +32,24 @@ const addIncome = () => {
 const addExpense = () => {
   const tr = document.createElement("tr");
   document.getElementById("expense-list").before(tr);
+  const img = document.createElement("img");
+  img.alt = "removeIcon";
+  img.src = `xfile.svg`;
+  img.width = "16";
   expense[0] = expensesDateInput.value;
   expense[1] = expensesInput.value;
   expense[2] = expensesAmountInput.value;
-  expense[3] = url("");
+  expense[3] = "";
   let rowExpense = expense.map((i) => {
-    const td = document.createElement("td");
-    tr.appendChild(td);
-    td.textContent = i;
-    tr.style.alignItems;
+    if (i != "") {
+      const td = document.createElement("td");
+      tr.appendChild(td);
+      td.textContent = i;
+      tr.style.alignItems;
+    } else {
+      const td = document.createElement("td");
+      tr.appendChild(td);
+      td.appendChild(img);
+    }
   });
 };

@@ -156,3 +156,9 @@ main .category-date {
   border-radius: 1rem;
   cursor: pointer;
 }
+.expense-table tr {
+  text-align: center;
+}
+.expense-table th {
+  border: 2px solid #2c2e43;
+}
